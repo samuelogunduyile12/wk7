@@ -633,16 +633,8 @@ video {
   isolation: auto;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
-
 .col-start-1 {
   grid-column-start: 1;
-}
-
-.row-span-1 {
-  grid-row: span 1 / span 1;
 }
 
 .row-start-1 {
@@ -655,6 +647,10 @@ video {
 
 .row-start-3 {
   grid-row-start: 3;
+}
+
+.row-start-4 {
+  grid-row-start: 4;
 }
 
 .row-start-5 {
@@ -671,10 +667,6 @@ video {
 
 .row-start-8 {
   grid-row-start: 8;
-}
-
-.row-start-4 {
-  grid-row-start: 4;
 }
 
 .float-start {
@@ -828,8 +820,8 @@ video {
   height: 100px;
 }
 
-.h-\[70vh\] {
-  height: 70vh;
+.h-\[90vh\] {
+  height: 90vh;
 }
 
 .h-screen {
@@ -1849,8 +1841,8 @@ video {
   background-color: rgb(2 6 23 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\.\/kkdk\.jpg\)\] {
-  background-image: url(./kkdk.jpg);
+.bg-\[url\(\.\.\/techsis\.jpg\)\] {
+  background-image: url(../techsis.jpg);
 }
 
 .decoration-slice {
@@ -1871,10 +1863,6 @@ video {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
-}
-
-.bg-contain {
-  background-size: contain;
 }
 
 .bg-fixed {
@@ -1986,6 +1974,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2045,6 +2038,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -2128,9 +2126,19 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2534,15 +2542,32 @@ video {
 }
 
 ul li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   width: 100%;
+  border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
 main article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 1rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -2618,12 +2643,12 @@ main article {
 }
 
 @media (min-width: 640px) {
-  .sm\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .sm\:col-span-1 {
     grid-column: span 1 / span 1;
+  }
+
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .sm\:col-start-1 {
@@ -2646,6 +2671,10 @@ main article {
     grid-row-start: 2;
   }
 
+  .sm\:row-start-3 {
+    grid-row-start: 3;
+  }
+
   .sm\:row-start-4 {
     grid-row-start: 4;
   }
@@ -2654,22 +2683,12 @@ main article {
     grid-row-start: 5;
   }
 
-  .sm\:row-start-3 {
-    grid-row-start: 3;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:underline {
     text-decoration-line: underline;
-  }
-
-  @media (min-width: 768px) {
-    .sm\:md\:row-span-1 {
-      grid-row: span 1 / span 1;
-    }
   }
 }
 
@@ -2686,6 +2705,10 @@ main article {
     grid-column: span 3 / span 3;
   }
 
+  .md\:col-start-1 {
+    grid-column-start: 1;
+  }
+
   .md\:col-start-2 {
     grid-column-start: 2;
   }
@@ -2694,34 +2717,16 @@ main article {
     grid-column-start: 3;
   }
 
-  .md\:col-start-1 {
-    grid-column-start: 1;
+  .md\:row-span-1 {
+    grid-row: span 1 / span 1;
   }
 
   .md\:row-span-2 {
     grid-row: span 2 / span 2;
   }
 
-  .md\:row-span-1 {
-    grid-row: span 1 / span 1;
-  }
-
-  @media (min-width: 768px) {
-    .md\:md\:row-span-1 {
-      grid-row: span 1 / span 1;
-    }
-  }
-
   .md\:row-span-3 {
     grid-row: span 3 / span 3;
-  }
-
-  .md\:row-start-4 {
-    grid-row-start: 4;
-  }
-
-  .md\:row-start-5 {
-    grid-row-start: 5;
   }
 
   .md\:row-start-1 {
@@ -2730,6 +2735,14 @@ main article {
 
   .md\:row-start-3 {
     grid-row-start: 3;
+  }
+
+  .md\:row-start-4 {
+    grid-row-start: 4;
+  }
+
+  .md\:row-start-5 {
+    grid-row-start: 5;
   }
 
   .md\:row-start-6 {

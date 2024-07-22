@@ -3,9 +3,9 @@
 @tailwind components;
 
  ul li{
-    @apply w-1/4 bg-gray-800 text-zinc-300 py-2
+    @apply w-full bg-gray-800 text-slate-100 text-center rounded-md py-3 my-2 px-6
 } 
 
 main article{
-    @apply md:bg-red-500 rounded-2xl sm:bg-green-700 bg-yellow-400
+    @apply md:bg-red-500 rounded-2xl sm:bg-green-700 bg-blue-500 text-white text-xl flex items-center justify-center
 }
